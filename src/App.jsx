@@ -6,10 +6,14 @@ import InputForm from './form'
 function App() {
   const [todos, setTodos] = useState([]);
 
+  function handleDelete(id) {
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id))
+}   
+
   return (<>
     <Container>
-      <InputForm className="form" setTodos={setTodos}/>
-      <TodoList className="list" todos={todos} />
+      <InputForm setTodos={setTodos}/>
+      <TodoList todos={todos} handleDelete={handleDelete} />
     </Container>
     </> )
 }
