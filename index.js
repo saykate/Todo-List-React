@@ -2,12 +2,15 @@ import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import TodoSchema from './model/Todo-Schema.js'
+import 'dotenv/config'
+
+console.log(process.env.MONGO_CREDS)
 
 const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://saykate:todo-list-react@cluster0.flkntnn.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_CREDS)
 
 app.get('/get', (req, res) => {
   TodoSchema.find()
