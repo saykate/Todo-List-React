@@ -4,8 +4,6 @@ import cors from 'cors'
 import TodoSchema from './model/Todo-Schema.js'
 import 'dotenv/config'
 
-console.log(process.env.MONGO_CREDS)
-
 const app = express()
 app.use(cors())
 app.use(express.json())

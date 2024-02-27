@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "./buttons";
+import Button from "./Buttons";
 import { v4 as uuidv4 } from "uuid";
 import axios from 'axios';
 

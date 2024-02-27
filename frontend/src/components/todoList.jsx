@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import TodoItem from "./todoItem";
+import TodoItem from "./TodoItem";
 import axios from "axios";
 
 function TodoList({ }) {

@@ -1,4 +1,4 @@
-import Button from "./buttons";
+import Button from "./Buttons";
 import Circle from '../assets/circle-outline.svg'
 import CircleFilled from '../assets/circle.svg'
 import axios from "axios";
