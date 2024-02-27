@@ -1,7 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
-import TodoSchema from './model/Todo-Schema.js'
+import TodoSchema from './models/Todo-Schema.js'
 import 'dotenv/config'
 
 const app = express()
